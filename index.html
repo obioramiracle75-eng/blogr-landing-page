@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | [Blogr]</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <link rel="stylesheet" href="style.css" />
+  <body class="overflow-x-hidden">
+    <header
+      class="relative min-h-[600px] bg-[url('./images/bg-pattern-intro-mobile.svg')] md:bg-[url('./images/bg-pattern-intro-desktop.svg')] md:bg-[length:150%] bg-no-repeat overflow-hidden rounded-bl-[90px] bg-[position:left_center]"
+    >
+      <div
+        class="absolute inset-0 bg-gradient-to-r from-[#ff8f70] to-[#ff3d54] opacity-95"
+      >
+        <nav class="flex justify-between text-white px-[6%] py-[50px]">
+          <img src="./images/logo.svg" alt="" />
+          <img class="md:hidden" src="./images/icon-hamburger.svg" alt="" />
+          <ul class="hidden md:flex ml-24 gap-6">
+            <li>Product</li>
+            <li>Company</li>
+            <li>Connect</li>
+          </ul>
+          <div class="ml-auto gap-8 items-center hidden md:flex">
+            <div>Login</div>
+            <div class="bg-white text-black rounded-2xl px-8 py-2">Sign Up</div>
+          </div>
+        </nav>
+        <div class="text-white w-full md:max-w-[60%] mx-auto mt-24 text-center">
+          <h1 class="text-5xl mb-8">A modern publishing platform</h1>
+          <p class="mb-8 opacity-75">Grow your audience and build online</p>
+
+          <div class="">
+            <button
+              class="px-8 py-2 bg-white text-[#ff525d] rounded-2xl mr-6 mb-6 md:mb-0"
+            >
+              Start for Free
+            </button>
+            <button
+              class="px-8 py-2 border border-white rounded-2xl text-white"
+            >
+              Learn More
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="mt-20 text-center lg:text-start text-3xl text-[#1f3f5b] p-8 lg:pl-[6%] relative">
+      <h3 class="mb-8 text-center text-3xl font-semibold">
+        Designed for the future
+      </h3>
+      <img
+        class="w-[80%] mx-auto lg:hidden"
+        src="./images/illustration-laptop-mobile.svg"
+        alt=""
+      />
+      <div class="md:mt-12 lg:mt-40 md:max-w-[400px] mx-auto lg:mx-0 xl:max-w-[600px]">
+        <div>
+          <h2 class="text-3xl mt-6 mb-4 text-[#1f3f5b] font-semibold md:mb-8">
+            Introducing an extensible editor
+          </h2>
+          <p class="text-sm leading-7">
+            Blogr features an exceedingly intuitive interface which lets you
+            focus on one thing: creating content. The editor supports management
+            of multiple blogs and allows easy manipulation of embeds such as
+            images, videos, and Markdown. Extensibility with plugins and themes
+            provide easy ways to add functionality or change the looks of a
+            blog.
+          </p>
+          <h2 class="text-3xl text-[#1f3f5b] mt-6 mb-4 font-semibold">
+            Robust content management
+          </h2>
+          <p class="text-sm leading-7">
+            Flexible content management enables users to easily move through
+            posts. Increase the usability of your blog by adding customized
+            categories, sections, format, or flow. With this functionality,
+            you’re in full control.
+          </p>
+        </div>
+      </div>
+      <img
+        class="hidden lg:block absolute right-[-150px] w-[800px] top-0"
+        src="./images/illustration-editor-desktop.svg"
+        alt=""
+      />
+    </section>
+  </body>
+</html>
